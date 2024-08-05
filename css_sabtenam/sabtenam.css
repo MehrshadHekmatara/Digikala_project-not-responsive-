@@ -40,7 +40,7 @@
           font-weight: 500;
           & span {
             font-weight: 600;
-          };
+          }
         }
       }
       .text2,
@@ -77,6 +77,7 @@
             padding-bottom: auto;
             color: #a30a1e;
             margin-top: unset;
+            display: block;
           }
           input[type="email"],
           input[type="submit"] {
@@ -89,6 +90,9 @@
             -o-border-radius: 8px;
             outline: unset;
             border: 1px solid #ef4056;
+          }
+          input[type="email"] {
+            padding: 10px;
           }
           input[type="submit"] {
             background-color: #ef4056;
