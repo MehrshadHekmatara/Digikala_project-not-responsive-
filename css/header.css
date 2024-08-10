@@ -536,7 +536,7 @@
           }
         }
         .menuhover ~ .blackmenu {
-          width: 100vw;
+          width: 100%;
           height: calc(100vh - 168px);
           background-color: rgba(0, 0, 0, 0.151);
           position: absolute;

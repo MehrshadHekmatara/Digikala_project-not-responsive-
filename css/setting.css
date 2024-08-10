@@ -15,3 +15,7 @@
   src: url(../fonts/IRANYekanWeb-Medium.woff);
   src: url(../fonts/IRANYekanWeb-Medium.woff2);
 }
+
+& a {
+  text-decoration: none !important;
+}
