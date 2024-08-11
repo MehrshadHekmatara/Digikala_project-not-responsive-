@@ -98,6 +98,26 @@
     .swiper-pagination-bullet {
       display: none;
     }
+    .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 1px solid rgb(204, 197, 197);
+        &::after {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          font-weight: bold;
+          color: rgb(68, 65, 65);
+        }
+      }
   }
   .slider2 {
     width: 100%;
