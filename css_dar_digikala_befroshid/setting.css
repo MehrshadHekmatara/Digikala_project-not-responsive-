@@ -9,9 +9,22 @@
 }
 
 @font-face {
-  font-family: sabtenam-font;
+  font-family: page2-font;
   src: url(../fonts/IRANYekanWeb-Medium.eot);
   src: url(../fonts/IRANYekanWeb-Medium.ttf);
   src: url(../fonts/IRANYekanWeb-Medium.woff);
   src: url(../fonts/IRANYekanWeb-Medium.woff2);
+}
+
+& a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+& span, & p, & div, & a, & h4, & h1 {
+    font-family: page2-font;
 }
