@@ -23,3 +23,7 @@
 * {
   scroll-behavior: smooth;
 }
+
+& span, & p, & div, & a, & h4, & h1, & h3, & del {
+  font-family: page1-font;
+}

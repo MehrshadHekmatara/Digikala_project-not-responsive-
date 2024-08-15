@@ -5,6 +5,9 @@
   .top {
     width: 100%;
     height: 59px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
     & img {
       width: 100%;
       height: 100%;
@@ -12,12 +15,18 @@
     }
   }
   .center {
-    width: 1298px;
+    width: 100%;
     height: 68px;
     margin: 0 auto;
     display: flex;
     flex-flow: row-reverse wrap;
     align-items: center;
+    position: fixed;
+    top: 59px;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: white;
+    padding-left: 25px;
     .right {
       width: calc(1098.19px - 22px);
       height: 100%;
@@ -117,7 +126,6 @@
             align-items: center;
           }
           & p {
-            font-family: page1-font;
             font-size: 13px;
             color: black;
           }
@@ -128,6 +136,8 @@
   .buttom {
     width: 100%;
     height: 41px;
+    position: absolute;
+    top: 127px;
     .buttom_container {
       width: 1330px;
       height: 100%;
@@ -144,17 +154,18 @@
           position: absolute;
           width: 100%;
           height: 100vh;
+          z-index: 12;
           background-color: rgba(0, 0, 0, 0.342);
-          top: 0;
+          top: -127px;
           left: 0;
           display: none;
-          z-index: 3;
           .city_container {
             position: relative;
             width: 462px;
             height: 487px;
             background-color: white;
             position: absolute;
+            z-index: 12;
             inset: 0;
             margin: auto;
             border-radius: 8px;
@@ -184,7 +195,6 @@
                 width: 81px;
                 height: 22px;
                 display: inline-block;
-                font-family: page1-font;
               }
               .city_line {
                 width: 91%;
@@ -311,7 +321,6 @@
           justify-content: center;
           column-gap: 5px;
           cursor: pointer;
-          font-family: page1-font;
           font-size: 14px;
           position: relative;
           .line {
@@ -334,7 +343,6 @@
           }
           & a {
             color: #68696d;
-            font-family: page1-font;
             font-size: 12px;
             text-decoration: none;
           }
@@ -395,7 +403,6 @@
                       column-gap: 5px;
                       & span {
                         color: #19bfd3;
-                        font-family: page1-font;
                         font-size: 12px;
                         padding-right: 20px;
                       }
@@ -481,13 +488,11 @@
                           }
                         }
                         & span {
-                          font-family: page1-font;
                           font-size: 12px;
                           margin-right: -10px;
                           color: #a1a3a8;
                         }
                         & p {
-                          font-family: page1-font;
                           font-size: 14px;
                           color: black;
                           margin-right: 10px;
@@ -504,7 +509,6 @@
                   }
                   & a {
                     text-decoration: none;
-                    font-family: page1-font;
                     font-size: 13px;
                     color: rgba(0, 0, 0, 0.774);
                   }
@@ -540,7 +544,7 @@
           height: calc(100vh - 168px);
           background-color: rgba(0, 0, 0, 0.151);
           position: absolute;
-          top: 168px;
+          top: 41px;
           right: 0;
           display: none;
           z-index: 2;
